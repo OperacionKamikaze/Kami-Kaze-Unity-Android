@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exportAPK.iml" filepath="$PROJECT_DIR$/.idea/modules/exportAPK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/launcher/exportAPK.launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/launcher/exportAPK.launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/exportAPK.unityLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/exportAPK.unityLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/FirebaseApp.androidlib/exportAPK.unityLibrary.FirebaseApp.androidlib.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/FirebaseApp.androidlib/exportAPK.unityLibrary.FirebaseApp.androidlib.iml" />
+    </modules>
+  </component>
+</project>
