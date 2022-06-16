@@ -1,2 +1,4 @@
-include ':launcher', ':unityLibrary'
-include 'unityLibrary:FirebaseApp.androidlib'
+include ':launcher'
+include ':FirebaseApp.androidlib'
+
+project(':FirebaseApp.androidlib').projectDir=new File('..\\unityLibrary\\FirebaseApp.androidlib')

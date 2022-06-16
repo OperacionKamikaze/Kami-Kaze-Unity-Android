@@ -4,18 +4,18 @@ allprojects {
     buildscript {
         repositories {
             google()
-            jcenter()
+            mavenCentral()
         }
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:4.0.1'
+            classpath 'com.android.tools.build:gradle:4.0.2'
             
         }
     }
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         flatDir {
             dirs "${project(':unityLibrary').projectDir}/libs"
         }
