@@ -86,9 +86,6 @@ namespace InteropServices
         if (il2cppType->type == IL2CPP_TYPE_CHAR  || il2cppType->type == IL2CPP_TYPE_BOOLEAN || il2cppType->type == IL2CPP_TYPE_STRING)
             return true;
 
-        if (vm::Type::IsGenericInstance(il2cppType))
-            return vm::GenericClass::GetTypeDefinition(klass->generic_class)->is_blittable;
-
         return klass->is_blittable;
     }
 
@@ -108,7 +105,9 @@ namespace InteropServices
             vm::Exception::Raise(ex);
         }
 
-        return gc::GCHandle::GetTargetHandle(obj, handle, type);
+        auto targetHandle = gc::GCHandle::GetTargetHandle(obj, handle, type);
+        vm::Exception::RaiseIfError(targetHandle.GetError());
+        return targetHandle.Get();
     }
 } /* namespace InteropServices */
 } /* namespace Runtime */
