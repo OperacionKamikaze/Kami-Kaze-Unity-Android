@@ -230,31 +230,35 @@ extern void U3CU3Ec__cctor_m5C8026324D0FD6D8C0D91D79C4F6A8493D744148 (void);
 extern void U3CU3Ec__ctor_m1BF662BEC7E5A907642A06D30DDB655862EFF337 (void);
 // 0x0000006D System.Void UIHealthBarPlayer/<>c::<Update>b__6_0(System.Threading.Tasks.Task)
 extern void U3CU3Ec_U3CUpdateU3Eb__6_0_mBC26451AA3E7BDB17472A5D76ADF5E09288A2C4E (void);
-// 0x0000006E System.Void enemyController::Start()
+// 0x0000006E System.Void buttonScript::FixedUpdate()
+extern void buttonScript_FixedUpdate_m5D5FA0B8E1B2C701BB85AF2B6F1981D349A97123 (void);
+// 0x0000006F System.Void buttonScript::.ctor()
+extern void buttonScript__ctor_m81BA44FBF3B272B88FA65C403B39F15AF24C7C17 (void);
+// 0x00000070 System.Void enemyController::Start()
 extern void enemyController_Start_mAF5801C37275849274A323F652CBE21EB92AA12D (void);
-// 0x0000006F System.Void enemyController::Update()
+// 0x00000071 System.Void enemyController::Update()
 extern void enemyController_Update_mB6AC6450C103D08898F92CB5FF8A06F5710DF8D2 (void);
-// 0x00000070 System.Void enemyController::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x00000072 System.Void enemyController::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void enemyController_OnTriggerEnter2D_mBC72DE65A74A69AB7DDA327A11453515C440E89F (void);
-// 0x00000071 System.Void enemyController::randomMovement()
+// 0x00000073 System.Void enemyController::randomMovement()
 extern void enemyController_randomMovement_m6369D6C3FE330AAF7C320BD6688259BD58666545 (void);
-// 0x00000072 System.Void enemyController::randomAttack()
+// 0x00000074 System.Void enemyController::randomAttack()
 extern void enemyController_randomAttack_m594F5A0A6501B8F0133511ED617C64219B7C2DD9 (void);
-// 0x00000073 System.Void enemyController::attackEnemy()
+// 0x00000075 System.Void enemyController::attackEnemy()
 extern void enemyController_attackEnemy_m509BD331659EAA734F3FF64F3FF5E4012CD9F749 (void);
-// 0x00000074 System.Void enemyController::attackFalseEnemy()
+// 0x00000076 System.Void enemyController::attackFalseEnemy()
 extern void enemyController_attackFalseEnemy_m241572B770EAC1B532D7259D596DE0EF390FF3FA (void);
-// 0x00000075 System.Void enemyController::executeAttackEnemy()
+// 0x00000077 System.Void enemyController::executeAttackEnemy()
 extern void enemyController_executeAttackEnemy_mA8CF32645A01F65BC118D6670DA73072D840F94F (void);
-// 0x00000076 System.Void enemyController::.ctor()
+// 0x00000078 System.Void enemyController::.ctor()
 extern void enemyController__ctor_m323840A687AB9C0352596CC61AD4448AABC0CC2A (void);
-// 0x00000077 System.Void hitBox::Start()
+// 0x00000079 System.Void hitBox::Start()
 extern void hitBox_Start_mEB02D4A56A82C8EBAC39B7BCB1A7A0046C1F1519 (void);
-// 0x00000078 System.Void hitBox::Update()
+// 0x0000007A System.Void hitBox::Update()
 extern void hitBox_Update_m210D111D2F172E2D771EE6EB79022DC37B8458EE (void);
-// 0x00000079 System.Void hitBox::.ctor()
+// 0x0000007B System.Void hitBox::.ctor()
 extern void hitBox__ctor_m8C38AC909D73101048883B2F4198D8CF09D8C950 (void);
-static Il2CppMethodPointer s_methodPointers[121] = 
+static Il2CppMethodPointer s_methodPointers[123] = 
 {
 	CircularProgressBar_Awake_mD9463815B13C8B9345F28253328DCD00C991F999,
 	CircularProgressBar_Update_mA53C9BB885A6D9D718E711C86C8AE622A79CCDF7,
@@ -365,6 +369,8 @@ static Il2CppMethodPointer s_methodPointers[121] =
 	U3CU3Ec__cctor_m5C8026324D0FD6D8C0D91D79C4F6A8493D744148,
 	U3CU3Ec__ctor_m1BF662BEC7E5A907642A06D30DDB655862EFF337,
 	U3CU3Ec_U3CUpdateU3Eb__6_0_mBC26451AA3E7BDB17472A5D76ADF5E09288A2C4E,
+	buttonScript_FixedUpdate_m5D5FA0B8E1B2C701BB85AF2B6F1981D349A97123,
+	buttonScript__ctor_m81BA44FBF3B272B88FA65C403B39F15AF24C7C17,
 	enemyController_Start_mAF5801C37275849274A323F652CBE21EB92AA12D,
 	enemyController_Update_mB6AC6450C103D08898F92CB5FF8A06F5710DF8D2,
 	enemyController_OnTriggerEnter2D_mBC72DE65A74A69AB7DDA327A11453515C440E89F,
@@ -378,7 +384,7 @@ static Il2CppMethodPointer s_methodPointers[121] =
 	hitBox_Update_m210D111D2F172E2D771EE6EB79022DC37B8458EE,
 	hitBox__ctor_m8C38AC909D73101048883B2F4198D8CF09D8C950,
 };
-static const int32_t s_InvokerIndices[121] = 
+static const int32_t s_InvokerIndices[123] = 
 {
 	1568,
 	1568,
@@ -491,6 +497,8 @@ static const int32_t s_InvokerIndices[121] =
 	1312,
 	1568,
 	1568,
+	1568,
+	1568,
 	1312,
 	1568,
 	1568,
@@ -507,7 +515,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	121,
+	123,
 	s_methodPointers,
 	0,
 	NULL,

@@ -282,6 +282,8 @@ struct VariableJoystick_tEA2A86D8EE903904A4F3D9FA53B8F4B065A9EB9B;
 struct VertexHelper_tDE8B67D3B076061C4F8DF325B0D63ED2E5367E55;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+// buttonScript
+struct buttonScript_t2A136D5645779252F49BB858B3838C872742EAFA;
 // enemyController
 struct enemyController_t95D7D64F5F56B41F0A6219872C355F136371F8BE;
 // hitBox
@@ -2121,6 +2123,24 @@ public:
 };
 
 
+// UnityEngine.KeyCode
+struct KeyCode_t1D303F7D061BF4429872E9F109ADDBCB431671F4 
+{
+public:
+	// System.Int32 UnityEngine.KeyCode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(KeyCode_t1D303F7D061BF4429872E9F109ADDBCB431671F4, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.Object
 struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A  : public RuntimeObject
 {
@@ -2324,6 +2344,24 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RenderMode_tFF8E9ABC771ACEBD5ACC2D9DFB02264E0EA6CDBF, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// UnityEngine.RuntimePlatform
+struct RuntimePlatform_tB8798C800FD9810C0FE2B7D2F2A0A3979D239065 
+{
+public:
+	// System.Int32 UnityEngine.RuntimePlatform::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RuntimePlatform_tB8798C800FD9810C0FE2B7D2F2A0A3979D239065, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -4448,6 +4486,15 @@ public:
 };
 
 
+// buttonScript
+struct buttonScript_t2A136D5645779252F49BB858B3838C872742EAFA  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+
+public:
+};
+
+
 // enemyController
 struct enemyController_t95D7D64F5F56B41F0A6219872C355F136371F8BE  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -5898,6 +5945,10 @@ inline void Action_1__ctor_mFA74ADE24B5F0A9ECC18BC57D04B9C0B3EDD7E4C (Action_1_t
 }
 // System.Threading.Tasks.Task System.Threading.Tasks.Task::ContinueWith(System.Action`1<System.Threading.Tasks.Task>)
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * Task_ContinueWith_m8540E40049DA1A53066538EBEBC69DE46859748F (Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * __this, Action_1_t20BA0CE0E9D07FB477BD3515213CA9F8C35EF142 * ___continuationAction0, const RuntimeMethod* method);
+// UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4 (const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mFDD450A4C61F2930928B12287FFBD1ACCB71E429 (int32_t ___key0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A (int32_t ___minInclusive0, int32_t ___maxExclusive1, const RuntimeMethod* method);
 // System.Void enemyController::randomMovement()
@@ -10043,6 +10094,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VariableJoystick__ctor_m1E03B9859AAB8461
 		L_0 = Vector2_get_zero_m621041B9DF5FAE86C1EF4CB28C224FEA089CB828(/*hidden argument*/NULL);
 		__this->set_fixedPosition_17(L_0);
 		Joystick__ctor_mF7C14D62A9A6B3BD77F6365BB88DE406A9CE4E08(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void buttonScript::FixedUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void buttonScript_FixedUpdate_m5D5FA0B8E1B2C701BB85AF2B6F1981D349A97123 (buttonScript_t2A136D5645779252F49BB858B3838C872742EAFA * __this, const RuntimeMethod* method)
+{
+	{
+		// if (Application.platform == RuntimePlatform.Android)
+		int32_t L_0;
+		L_0 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// if (Input.GetKey(KeyCode.Escape))
+		bool L_1;
+		L_1 = Input_GetKey_mFDD450A4C61F2930928B12287FFBD1ACCB71E429(((int32_t)27), /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// Application.Quit();
+		Application_Quit_m8D720E5092786C2EE32310D85FE61C253D3B1F2A(/*hidden argument*/NULL);
+	}
+
+IL_0017:
+	{
+		// }
+		return;
+	}
+}
+// System.Void buttonScript::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void buttonScript__ctor_m81BA44FBF3B272B88FA65C403B39F15AF24C7C17 (buttonScript_t2A136D5645779252F49BB858B3838C872742EAFA * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

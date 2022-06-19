@@ -7,7 +7,7 @@ dependencies {
     }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
     buildToolsVersion '30.0.2'
 
     compileOptions {
@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         minSdkVersion 24
-        targetSdkVersion 30
+        targetSdkVersion 32
         applicationId 'es.kamikaze.app'
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
@@ -33,10 +33,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('C:/Users/nicol/Desktop/Unity/Kami-Kaze-Unity/Assets/user.keystore')
-            storePassword ''
+            storeFile file('C:/Users/nicol/Desktop/proyecto/Kami-Kaze-Unity/Assets/user.keystore')
+            storePassword 'model1.0'
             keyAlias 'realtime'
-            keyPassword ''
+            keyPassword 'model1.0'
         }
     }
 
