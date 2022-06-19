@@ -1,2 +1,4 @@
 unityLibrary/build
 unityLibrary/FirebaseApp.androidlib/build
+unityLibrary/src/main/jniLibs
+unityLibrary/symbols
