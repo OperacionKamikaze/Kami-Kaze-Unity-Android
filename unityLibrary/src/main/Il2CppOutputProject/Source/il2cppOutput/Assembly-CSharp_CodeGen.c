@@ -216,8 +216,8 @@ extern void PlayerMovement_attackFalsePlayer_m3BB30ABC0D47ECECD92DB6FC4F02A4738E
 extern void PlayerMovement_executeAttack_m7CF84029F5EDE607C2EA8E8F7A2D336DFC82F2C9 (void);
 // 0x00000066 System.Void PlayerMovement::.ctor()
 extern void PlayerMovement__ctor_mB37559C5B0638161878D20E00B7C672FC38BBBAA (void);
-// 0x00000067 System.Void PlayerMovement::<Start>b__19_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
-extern void PlayerMovement_U3CStartU3Eb__19_0_m4C02005E4B8A102E28B46382E12B421361E07D66 (void);
+// 0x00000067 System.Void PlayerMovement::<Start>b__20_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
+extern void PlayerMovement_U3CStartU3Eb__20_0_mF2061606AB76C65B5B4B8BCC2E918092C8F82B44 (void);
 // 0x00000068 System.Void PluginWrapper::Start()
 extern void PluginWrapper_Start_m5EC7EB9B4C3C1ED4EA5B92A85A4F79258A462CF4 (void);
 // 0x00000069 System.Void PluginWrapper::Update()
@@ -240,13 +240,29 @@ extern void UIHealthBarEnemy_Start_m905C27B00F9FAFD58A40FAB337F22AC1D44BA827 (vo
 extern void UIHealthBarEnemy_Update_m7C24F1249CA8E69B36588E364AB6EE3C7C505166 (void);
 // 0x00000072 System.Void UIHealthBarEnemy::.ctor()
 extern void UIHealthBarEnemy__ctor_m604B3E96A00D97289B60E9C764304DF8856FBBA1 (void);
-// 0x00000073 System.Void UIHealthBarPlayer::Start()
+// 0x00000073 System.Void UIHealthBarEnemy::<Update>b__7_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
+extern void UIHealthBarEnemy_U3CUpdateU3Eb__7_0_m45AC520AE16F71FDA5B52B905A0C9A9500E115B9 (void);
+// 0x00000074 System.Void UIHealthBarEnemy/<>c::.cctor()
+extern void U3CU3Ec__cctor_m365786068C33D43445341E64D5E5F9CCC47EE596 (void);
+// 0x00000075 System.Void UIHealthBarEnemy/<>c::.ctor()
+extern void U3CU3Ec__ctor_m3E0E39CEE1CA5ADBAF56D737B8E6522ABEAAF9DC (void);
+// 0x00000076 System.Void UIHealthBarEnemy/<>c::<Update>b__7_1(System.Threading.Tasks.Task)
+extern void U3CU3Ec_U3CUpdateU3Eb__7_1_m3A48568C659F821EF62BFD141A36361659552595 (void);
+// 0x00000077 System.Void UIHealthBarPlayer::Start()
 extern void UIHealthBarPlayer_Start_m6845997264EA35416D1D6A5F5B41F659CD337F2A (void);
-// 0x00000074 System.Void UIHealthBarPlayer::Update()
+// 0x00000078 System.Void UIHealthBarPlayer::Update()
 extern void UIHealthBarPlayer_Update_mD1FABDC5E1994BB8050882D30ACCD373A6215DDD (void);
-// 0x00000075 System.Void UIHealthBarPlayer::.ctor()
+// 0x00000079 System.Void UIHealthBarPlayer::.ctor()
 extern void UIHealthBarPlayer__ctor_mB91E2808C0972D45A7ED257EA239176E6A925183 (void);
-static Il2CppMethodPointer s_methodPointers[117] = 
+// 0x0000007A System.Void UIHealthBarPlayer::<Update>b__6_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
+extern void UIHealthBarPlayer_U3CUpdateU3Eb__6_0_m0EACA06032FFAA5D5A63EF4AEFBD3F5612E18B09 (void);
+// 0x0000007B System.Void UIHealthBarPlayer/<>c::.cctor()
+extern void U3CU3Ec__cctor_mE68586B78051D2883059AC38407F5520A3CB0DB0 (void);
+// 0x0000007C System.Void UIHealthBarPlayer/<>c::.ctor()
+extern void U3CU3Ec__ctor_mCDF4889E32C5CADDC801C99824CA12C9CDE18304 (void);
+// 0x0000007D System.Void UIHealthBarPlayer/<>c::<Update>b__6_1(System.Threading.Tasks.Task)
+extern void U3CU3Ec_U3CUpdateU3Eb__6_1_m50350CEF4DC7927AF7736260E0E5351A07551596 (void);
+static Il2CppMethodPointer s_methodPointers[125] = 
 {
 	CircularProgressBar_Awake_m73A9FA79CB3FA0E215CFE6D70D46A3ABA2412B10,
 	CircularProgressBar_Update_m36F0013C2E0FA0EA5F77158A78E3D6083256D10A,
@@ -350,7 +366,7 @@ static Il2CppMethodPointer s_methodPointers[117] =
 	PlayerMovement_attackFalsePlayer_m3BB30ABC0D47ECECD92DB6FC4F02A4738E93730E,
 	PlayerMovement_executeAttack_m7CF84029F5EDE607C2EA8E8F7A2D336DFC82F2C9,
 	PlayerMovement__ctor_mB37559C5B0638161878D20E00B7C672FC38BBBAA,
-	PlayerMovement_U3CStartU3Eb__19_0_m4C02005E4B8A102E28B46382E12B421361E07D66,
+	PlayerMovement_U3CStartU3Eb__20_0_mF2061606AB76C65B5B4B8BCC2E918092C8F82B44,
 	PluginWrapper_Start_m5EC7EB9B4C3C1ED4EA5B92A85A4F79258A462CF4,
 	PluginWrapper_Update_mEE5946B8E8F782C84EA7E04C2D4F307D6A34DAD3,
 	PluginWrapper__ctor_mAF99DBD866CA7625BBCC5BBF03D64532A8A2B3D7,
@@ -362,11 +378,19 @@ static Il2CppMethodPointer s_methodPointers[117] =
 	UIHealthBarEnemy_Start_m905C27B00F9FAFD58A40FAB337F22AC1D44BA827,
 	UIHealthBarEnemy_Update_m7C24F1249CA8E69B36588E364AB6EE3C7C505166,
 	UIHealthBarEnemy__ctor_m604B3E96A00D97289B60E9C764304DF8856FBBA1,
+	UIHealthBarEnemy_U3CUpdateU3Eb__7_0_m45AC520AE16F71FDA5B52B905A0C9A9500E115B9,
+	U3CU3Ec__cctor_m365786068C33D43445341E64D5E5F9CCC47EE596,
+	U3CU3Ec__ctor_m3E0E39CEE1CA5ADBAF56D737B8E6522ABEAAF9DC,
+	U3CU3Ec_U3CUpdateU3Eb__7_1_m3A48568C659F821EF62BFD141A36361659552595,
 	UIHealthBarPlayer_Start_m6845997264EA35416D1D6A5F5B41F659CD337F2A,
 	UIHealthBarPlayer_Update_mD1FABDC5E1994BB8050882D30ACCD373A6215DDD,
 	UIHealthBarPlayer__ctor_mB91E2808C0972D45A7ED257EA239176E6A925183,
+	UIHealthBarPlayer_U3CUpdateU3Eb__6_0_m0EACA06032FFAA5D5A63EF4AEFBD3F5612E18B09,
+	U3CU3Ec__cctor_mE68586B78051D2883059AC38407F5520A3CB0DB0,
+	U3CU3Ec__ctor_mCDF4889E32C5CADDC801C99824CA12C9CDE18304,
+	U3CU3Ec_U3CUpdateU3Eb__6_1_m50350CEF4DC7927AF7736260E0E5351A07551596,
 };
-static const int32_t s_InvokerIndices[117] = 
+static const int32_t s_InvokerIndices[125] = 
 {
 	3509,
 	3509,
@@ -482,15 +506,23 @@ static const int32_t s_InvokerIndices[117] =
 	3509,
 	3509,
 	3509,
+	2860,
+	5388,
+	3509,
+	2860,
 	3509,
 	3509,
 	3509,
+	2860,
+	5388,
+	3509,
+	2860,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	117,
+	125,
 	s_methodPointers,
 	0,
 	NULL,
