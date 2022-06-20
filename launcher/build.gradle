@@ -32,9 +32,9 @@ android {
     signingConfigs {
         release {
             storeFile file('C:/Users/nicol/Desktop/proyecto/Kami-Kaze-Unity/Assets/user.keystore')
-            storePassword 'model1.0'
+            storePassword ''
             keyAlias 'realtime'
-            keyPassword 'model1.0'
+            keyPassword ''
         }
     }
 
