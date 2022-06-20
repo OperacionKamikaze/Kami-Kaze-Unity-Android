@@ -30,8 +30,8 @@ extern void ClassicProgressBar_Update_m3DB3E6C729CD98257CAC8D7E87D30CBDC8449B7B 
 extern void ClassicProgressBar_ConvertFragmentToWidth_m5185849953BA7968455B78A99BE33351FBB4819F (void);
 // 0x00000009 System.Void ClassicProgressBar::.ctor()
 extern void ClassicProgressBar__ctor_m2473EF169C97257908A6117D0EF93DD590E5D4AD (void);
-// 0x0000000A System.Void buttonScript::FixedUpdate()
-extern void buttonScript_FixedUpdate_mA36C3A5081E70B81EBA3594707363B2678A8968F (void);
+// 0x0000000A System.Void buttonScript::Update()
+extern void buttonScript_Update_m7B758838E0BEA2EA8F3B2AD40B7E8C58BF869427 (void);
 // 0x0000000B System.Void buttonScript::.ctor()
 extern void buttonScript__ctor_m523DD1133462A29611203508B9FBE2C11D76C44B (void);
 // 0x0000000C System.Void CharacterController2D::Awake()
@@ -273,7 +273,7 @@ static Il2CppMethodPointer s_methodPointers[125] =
 	ClassicProgressBar_Update_m3DB3E6C729CD98257CAC8D7E87D30CBDC8449B7B,
 	ClassicProgressBar_ConvertFragmentToWidth_m5185849953BA7968455B78A99BE33351FBB4819F,
 	ClassicProgressBar__ctor_m2473EF169C97257908A6117D0EF93DD590E5D4AD,
-	buttonScript_FixedUpdate_mA36C3A5081E70B81EBA3594707363B2678A8968F,
+	buttonScript_Update_m7B758838E0BEA2EA8F3B2AD40B7E8C58BF869427,
 	buttonScript__ctor_m523DD1133462A29611203508B9FBE2C11D76C44B,
 	CharacterController2D_Awake_mF72C6B9440FF47A13CB4AF856E8453441A8FFA29,
 	CharacterController2D_FixedUpdate_m779AFE1968D19C3CE709AF18D22A2846AE2B06FF,
