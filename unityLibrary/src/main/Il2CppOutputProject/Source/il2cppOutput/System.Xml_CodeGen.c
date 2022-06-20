@@ -13,15 +13,16 @@
 
 
 // 0x00000001 System.Void System.Xml.XmlReader::.cctor()
-extern void XmlReader__cctor_m128907AB1DC1AD053C3CDF366B6A9C5F9AE84D83 (void);
+extern void XmlReader__cctor_m8C939FA4F60E046BCAEDF0969A6E3B89D9CB0A4E (void);
 static Il2CppMethodPointer s_methodPointers[1] = 
 {
-	XmlReader__cctor_m128907AB1DC1AD053C3CDF366B6A9C5F9AE84D83,
+	XmlReader__cctor_m8C939FA4F60E046BCAEDF0969A6E3B89D9CB0A4E,
 };
 static const int32_t s_InvokerIndices[1] = 
 {
-	5388,
+	2529,
 };
+extern const CustomAttributesCacheGenerator g_System_Xml_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_System_Xml_CodeGenModule;
 const Il2CppCodeGenModule g_System_Xml_CodeGenModule = 
 {
@@ -38,6 +39,7 @@ const Il2CppCodeGenModule g_System_Xml_CodeGenModule =
 	0,
 	NULL,
 	NULL,
+	g_System_Xml_AttributeGenerators,
 	NULL, // module initializer,
 	NULL,
 	NULL,
