@@ -2017,6 +2017,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B68
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m1AB34E71D9885B120F6021EB2B11DCB28CD6008D (const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_m0BF0499CADC378F02B6BEE2399FB945AB929B81A (int32_t ___key0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Application::Quit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134 (const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.Rigidbody2D>()
 inline Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -2325,8 +2327,6 @@ inline int32_t AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA042
 }
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF (String_t* ___sceneName0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Application::Quit()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134 (const RuntimeMethod* method) ;
 // System.Void Jugador::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Jugador__ctor_m52EE99F23B2E0B63DFE4AFB3065CFEAE53C4C0AF (Jugador_t8B9871104F05B4960D04B87849EAF14F0EFC5029* __this, int32_t ___ataque0, int32_t ___defensa1, int32_t ___experiencia2, int32_t ___oro3, int32_t ___velocidad4, int32_t ___vida5, const RuntimeMethod* method) ;
 // System.Void SceneChange::LoadScene(System.String)
@@ -2958,8 +2958,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClassicProgressBar__ctor_m2473EF169C9725
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void buttonScript::FixedUpdate()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void buttonScript_FixedUpdate_mA36C3A5081E70B81EBA3594707363B2678A8968F (buttonScript_tB8C99B166850311D90753315B03BD7D3FCC36FFD* __this, const RuntimeMethod* method) 
+// System.Void buttonScript::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void buttonScript_Update_m7B758838E0BEA2EA8F3B2AD40B7E8C58BF869427 (buttonScript_tB8C99B166850311D90753315B03BD7D3FCC36FFD* __this, const RuntimeMethod* method) 
 {
 	{
 		// if (Application.platform == RuntimePlatform.Android)
@@ -2967,18 +2967,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void buttonScript_FixedUpdate_mA36C3A5081E70B
 		L_0 = Application_get_platform_m1AB34E71D9885B120F6021EB2B11DCB28CD6008D(NULL);
 		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
 		{
-			goto IL_0012;
+			goto IL_0017;
 		}
 	}
 	{
 		// if (Input.GetKey(KeyCode.Escape))
 		bool L_1;
 		L_1 = Input_GetKey_m0BF0499CADC378F02B6BEE2399FB945AB929B81A(((int32_t)27), NULL);
-		// return;
-		return;
+		if (!L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// Application.Quit();
+		Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134(NULL);
 	}
 
-IL_0012:
+IL_0017:
 	{
 		// }
 		return;
@@ -6985,7 +6991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIHealthBarEnemy_Update_m7C24F1249CA8E69
 		//                 {
 		//                     if (task.IsCompleted)
 		//                     {
-		//                         return;
+		//                         Application.Quit();
 		//                     }
 		//                 });
 		//             }
@@ -7142,7 +7148,7 @@ IL_0021_1:
 				// {
 				//     if (task.IsCompleted)
 				//     {
-				//         return;
+				//         Application.Quit();
 				//     }
 				// });
 				DatabaseReference_tD6F9941BEAE8109991B814490DA64099EECBFA6D* L_15 = __this->___reference_7;
@@ -7276,7 +7282,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CUpdateU3Eb__7_1_m3A48568C659F
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = Task_get_IsCompleted_m942D6D536545EF059089398B19435591561BB831(L_0, NULL);
-		// return;
+		if (!L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// Application.Quit();
+		Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134(NULL);
+	}
+
+IL_000d:
+	{
+		// });
 		return;
 	}
 }
@@ -7366,7 +7384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIHealthBarPlayer_Update_mD1FABDC5E1994B
 		//                 {
 		//                     if (task.IsCompleted)
 		//                     {
-		//                         return;
+		//                         Application.Quit();
 		//                     }
 		//                 });
 		//             }
@@ -7523,7 +7541,7 @@ IL_0021_1:
 				// {
 				//     if (task.IsCompleted)
 				//     {
-				//         return;
+				//         Application.Quit();
 				//     }
 				// });
 				DatabaseReference_tD6F9941BEAE8109991B814490DA64099EECBFA6D* L_15 = __this->___reference_7;
@@ -7657,7 +7675,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CUpdateU3Eb__6_1_m50350CEF4DC7
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = Task_get_IsCompleted_m942D6D536545EF059089398B19435591561BB831(L_0, NULL);
-		// return;
+		if (!L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// Application.Quit();
+		Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134(NULL);
+	}
+
+IL_000d:
+	{
+		// });
 		return;
 	}
 }

@@ -10,7 +10,7 @@
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"
             android:resizeableActivity="true"
-            android:screenOrientation="reverseLandscape"
+            android:screenOrientation="landscape"
             android:theme="@style/UnityThemeSelector">
             <meta-data
                 android:name="unityplayer.UnityActivity"
